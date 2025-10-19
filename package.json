@@ -5,13 +5,15 @@
 		"build": "vite build",
 		"dev": "vite",
 		"preview": "vite preview",
-		"zip": "pnpm run build && mkdir -p dist && zip -r dist/game.zip dist -x \"**/.DS_Store\""
+		"zip": "pnpm run build && mkdir -p dist && zip -r dist/game.zip dist -x \"**/.DS_Store\"",
+		"check": "tsc"
 	},
 	"dependencies": {
 		"kaplay": "4000.0.0-alpha.22"
 	},
 	"devDependencies": {
 		"@types/node": "^24.8.1",
+		"typescript": "^5.9.3",
 		"vite": "^7.1.10"
 	}
 }
